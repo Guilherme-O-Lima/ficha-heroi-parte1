@@ -1,0 +1,102 @@
+/* Corpo do texto */
+body {
+  background: linear-gradient(135deg, #030408 0%, #161b22 100%);
+  min-height: 100vh;
+  margin: 0;
+}
+
+.cor-branca{
+    color: var(--cor_texto);
+}
+
+.cor-azul{
+    color: rgb(36, 160, 255); 
+}
+
+/* Root */
+:root{
+    --cor_texto: aliceblue;
+}
+
+
+/* Título */
+.titulo{
+    text-align: center;
+    color: var(--cor_texto);
+}
+
+.borda-titulo{
+    margin: 40px auto 20px auto;
+    width: 650px;
+    border: 1px solid #3b82f6;
+    text-align: center;
+    border-radius: 12px;
+    background: rgba(30, 41, 59, 0.6);
+}
+
+.texto-inicial{
+    font-size: 20px;
+    color: var(--cor_texto);
+}
+
+.texto-geral{
+    font-size: 18px;
+    color: var(--cor_texto);
+}
+
+/* Botões e Flexbox*/
+a.botao1{
+    border: 4px solid #484f58;
+    background: #242938;
+    color: #f0f6fc;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 15px;
+}
+a.botao1:hover{
+    border: 4px solid #7082b9;;
+    background-color: #38446b;
+    color: #ffffff;
+}
+.flexbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 60px;
+}
+
+/* Subtítulos e alinhamentos de textos*/
+.texto-centro{
+    text-align: center;
+}
+
+.borda-subtitulos{
+    margin: 70px 5px 60px 5px ;
+    width: 300px;
+    border-bottom: 3px solid #60a5fa;
+    text-align: center;
+    border-radius: 15px;
+    background: transparent;
+    font-size: 1.6rem;
+    color: #f8fafc;
+
+}
+
+/* Estilo padrão para mobile */
+.galeria {
+ display: grid;
+ grid-template-columns: 1fr;
+ gap: 15px;
+}
+/* Estilo padrão para tablets */
+@media screen and (min-width: 768px) {
+ .galeria {
+ grid-template-columns: repeat(2, 1fr);
+ }
+}
+/* Estilo padrão para desktop */
+@media screen and (min-width: 1024px) {
+ .galeria {
+ grid-template-columns: repeat(3, 1fr);
+ }
+}
